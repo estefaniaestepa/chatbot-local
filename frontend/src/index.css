@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar personalizado */
+nav ul li a {
+  @apply text-white hover:text-blue-200;
+}
+
+nav button {
+  @apply px-3 py-1 rounded-md font-medium transition-all;
+}
+
+/* Footer personalizado */
+footer a {
+  @apply hover:text-gray-400 transition-colors duration-200;
+}
+
+footer div {
+  @apply text-center;
+}
+
+/* Toastify */
+.Toastify__toast {
+  font-family: 'Inter', sans-serif;
+}
+
+.Toastify__toast--success {
+  background: #22c55e;
+}
+
+.Toastify__toast--error {
+  background: #ef4444;
+}
+
+.Toastify__toast--info {
+  background: #3b82f6;
+}
+
+.Toastify__toast--warning {
+  background: #f59e0b;
+}
+
+.chat-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.chat-bubble-user {
+  background-color: #dbeafe;
+  text-align: right;
+}
+.chat-bubble-bot {
+  background-color: #dcfce7;
+  text-align: left;
+}
+
+/* Personalizar botones */
+button {
+  transition: all 0.3s ease;
+}
+
+/* Personalizar secciones */
+section {
+  scroll-margin-top: 80px; /* Espacio para navbar fijo */
+}
